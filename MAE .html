@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAE - Laptops Reacondicionadas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+    }header {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-btn div {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(20, 20, 20, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  z-index: 1000;
+  padding: 40px 60px;
+  border-radius: 12px;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.menu.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.menu a {
+  color: white;
+  margin: 20px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #00bcd4;
+}
+
+.empresa-info {
+  padding: 30px 40px;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+
+.empresa-info .texto-principal {
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.empresa-info .texto-secundario {
+  font-size: 1.1em;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.empresa-info .horario {
+  font-size: 1em;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.imagen-laptop {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  display: block;
+}
+
+section {
+  margin: 20px 40px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#productos {
+  background-color: #e0f7fa;
+  color: #333;
+}
+
+#productos h2 {
+  color: #40e0d0;
+}
+
+#productos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#productos li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+#contacto {
+  background-color: #e0f7fa;
+  font-size: 18px;
+  color: #0077b6;
+}
+
+#contacto h2 {
+  margin-top: 0;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <img src="images/LogoMAE.jpg" alt="Logo MAE">
+    <h1>MAE EMPRESA Laptops Reacondicionadas y celulares</h1>
+  </header>  <div class="menu-btn" id="menu-btn">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>  <nav class="menu" id="menu">
+    <a href="#empresa-info">Inicio</a>
+    <a href="#empresa-info">¿Quiénes somos?</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>  <div class="empresa-info" id="empresa-info">
+    <p class="texto-principal">
+      Bienvenido a MAE. Nos dedicamos a la venta de laptops reacondicionadas de alta calidad, incluyendo modelos gamers como la MSI Katana 15 y laptops Asus. También contamos con celulares Google Pixel reacondicionados y funcionales.
+    </p>
+    <p class="texto-secundario">
+      Si buscas equipo potente a buen precio, estás en el lugar correcto. Nuestra misión es brindarte tecnología confiable, a un costo accesible.
+    </p>
+    <div class="horario">
+      🕒 Abrimos de jueves a domingo
+    </div>
+    <img src="images/LaptopAlienware.jpg" alt="Laptop Alienware" class="imagen-laptop" />
+    <img src="images/LaptopLenovo13th.jpg" alt="Laptop Lenovo i7" class="imagen-laptop" />
+  </div>  <section id="productos">
+    <h2>Productos</h2>
+    <ul>
+      <li>💻 Laptop Gamer MSI Katana 15 Intel i7 - $16,800 (reacondicionada)</li>
+      <li>💻 Laptop gamer Alienware Intel i7 8th - $14,000 (reacondicionada)</li>
+      <li>💻 Laptop gamer Alienware Intel i7 13th 4060 RTX</li>
+      <li>💻 Laptop HP Notebook Touch i5</li>
+      <li>💻 Laptop Lenovo Intel i7 13th Iris Xe - $12,000 (reacondicionada)</li>
+    </ul>
+    <p>
+      Cualquier duda o pregunta sobre nuestros productos, te atendemos como lo son los procesadores de Intel, tarjetas gráficas, y el procesador Intel Iris Xe Graphics.
+    </p>
+  </section>  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 Teléfono para contacto: <strong>52 55 6878 3139</strong></p>
+    <p>Atendemos cualquier duda o pregunta o quejas.</p>
+  </section>  <section id="ubicacion" style="margin: 20px 40px; padding: 20px; background-color: #e0f7fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); color:#0077b6;">
+    <h2>Ubicación</h2>
+    <p>Colorines México El Jardín</p>
+  </section>  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('show');
+      });
+    });
+  </script></body>
+</html>
